@@ -3,8 +3,9 @@ MakeDieSS
 
 front end for https://github.com/mengskysama/shadowsocks/tree/manyuser
 
+确保你的PHP版本>=5.3 MYSQL>=5.0
 
-导入 sql.sql
+创建数据库shadowsocks导入 sql.sql，注意这个是manyuser里面数据库的完整版本，如果想要用前端必须导入这个。
 
 配置 function.php
 
@@ -23,7 +24,9 @@ $arr_server = array(
 );
 ```
 
-'arr_server'是一个API用来主动停止一个账号用来重置账号，没有就算了...
+'arr_server'是一个API用来主动停止一个账号用来重置账号，重置密码之类的，没有就算了...不影响使用。
+
+需要在ss里面增加一个webapi，twisted参考
 ```
     def render_GET(self, request):
         retcode = 1
