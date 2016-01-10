@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>_|_</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+</head>
+<body>
+<div style="padding: 10px">
+    流量: 5GB/月<br>
+    <a class=n href="./how">使用帮助</a> 
+</div>
+{% for server in servers %}
+<div style="padding: 10px">
+  <div>
+    Locate: {{server.locate}}
+  </div>
+  <div>
+    Host: {{server.host}}
+  </div>
+  <div>
+    Port: {{user.service_port}}
+  </div>
+  <div>
+    Password: {{user.service_pass}}
+  </div>
+  <div>
+    Method: {{server.method}}
+  </div>
+</div>
+{% endfor %}
+
+</body>
+</html>
