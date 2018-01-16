@@ -1,9 +1,0 @@
-requests
-wtforms
-Flask
-MySQL-python
-Flask-Sqlalchemy
-Flask-Login
-flask-script
-Flask-And-Redis
-flask-mail
